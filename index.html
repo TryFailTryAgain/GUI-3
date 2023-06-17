@@ -1,0 +1,58 @@
+<!-- Resources utilized along side w3School:
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableRowElement/insertCell
+https://www.w3schools.com/jsref/dom_obj_table.asp
+https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Multiplication</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <!--the bannar region-->
+    <div id = "banner-container">
+        <h1>Multiplication Table Calculator</h1>
+    </div>
+
+    <!--container for data input fields-->
+    <div id = "dataInput"> 
+        <h2>Enter the data</h2>
+        <p>Restrictions:The range between start and end number can not be greater than 100 <br>
+            The number can not be larger than +- 1000000000 <br>
+            The input must be a number</p>
+            <form id="inputForm">
+                <label for="xStart">x start:</label>
+                <input type="number" id="xStart" name="xStart"><br>
+
+                <label for="xEnd">x end:</label>
+                <input type="number" id="xEnd" name="xEnd"><br>
+
+                <label for="yStart">y start:</label>
+                <input type="number" id="yStart" name="yStart"><br>
+
+                <label for="yEnd">y end:</label>
+                <input type="number" id="yEnd" name="yEnd"><br>
+            </form>
+        </div>
+        <!--modified to display any errors encountered-->
+        <div id = "inputErrorMsg"></div>
+        <!--Submit the numbers to be calculated in the table-->
+        <button id = "submit">Submit</button>
+    
+    </div>
+
+    <!--Container for table-->
+    <div id = "jsTable">
+        <!--create a table that contains only one element in the first column first row-->
+        <table id = "dynTable"></table>
+    
+    </div>
+    <script src="script.js"></script>
+</body>
+
+
+
+
+</html>

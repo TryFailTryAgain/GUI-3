@@ -1,0 +1,99 @@
+/* Resources utilized along side w3School:https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableRowElement/insertCell
+https://www.w3schools.com/jsref/dom_obj_table.asp
+https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/* makes the banner */
+#banner-container {
+    background-color: #2275ac;
+    color: #000000;
+    padding: 6px;
+}
+
+/* styles the form data fields */
+#inputForm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* shifts the lables over for the forms */
+#inputForm label {
+    margin-left: 20px;
+}
+
+/* fixes up the input fields to look better */
+#inputForm input {
+    width: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #b5b5b5;
+}
+/* makes the error messages stand out */
+#inputErrorMsg {
+    font-weight: bold;
+    margin: 10px;
+    color: #ff0000;
+}
+/* makes the error fields red and overrides other styling */
+.error {
+    border: 3px solid #ff0000 !important;
+    background-color: #ff0000 !important;
+}
+/* submit button */
+#submit {
+    padding: 10px;
+    background-color: #383838;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+/* adds a bit of buffer around the table */
+#jsTable {
+    margin-top: 20px;
+}
+
+
+#jsTable {
+    max-width: 80%;
+    max-height: 50vh;
+    overflow: scroll;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: right;
+}
+
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+/* sets the first row to stick to the top while scrolling
+   and hides cells under it*/
+tr:first-child th {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+}
+/* sets the first cell of each row to stick and hide elements under it as well*/
+th:first-of-type {
+    position: sticky;
+    left: 0;
+    background-color: #ffffff;
+}
+
+td:nth-child(1n) {
+    background-color: #f0faff;
+}
+
+td:nth-child(2n) {
+    background-color: #e2f5ff;
+}
+
+td:nth-child(3n) {
+    background-color: #ccedff;
+}
