@@ -32,17 +32,20 @@ body {
     border-radius: 5px;
     border: 1px solid #b5b5b5;
 }
+
 /* makes the error messages stand out */
 #inputErrorMsg {
     font-weight: bold;
     margin: 10px;
     color: #ff0000;
 }
+
 /* makes the error fields red and overrides other styling */
 .error {
     border: 3px solid #ff0000 !important;
     background-color: #ff0000 !important;
 }
+
 /* submit button */
 #submit {
     padding: 10px;
@@ -72,6 +75,7 @@ td {
     border: 1px solid black;
     padding: 5px;
 }
+
 /* sets the first row to stick to the top while scrolling
    and hides cells under it*/
 tr:first-child th {
@@ -79,6 +83,7 @@ tr:first-child th {
     top: 0;
     background-color: #ffffff;
 }
+
 /* sets the first cell of each row to stick and hide elements under it as well*/
 th:first-of-type {
     position: sticky;
